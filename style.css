@@ -8,18 +8,24 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 5px 20px;
+    margin: 5px 120px;
 }
 
 .s1all {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
 }
 
 .s1text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.s1text h1 {
+    /* padding: 10px 0; */
+    font-size: 30px;
 }
 
 .s1text p {
@@ -37,6 +43,10 @@ body {
     font-size: small;
 }
 
+.s1img{
+    display: flex;
+    justify-content: center;
+}
 .s1img img{
     width: 440px;
 }
