@@ -8,8 +8,35 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 5px 20px;
 }
 
 .s1all {
     display: flex;
+    justify-content: space-around;
+}
+
+.s1text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s1text p {
+    padding: 10px 0;
+    font-size: small;
+}
+
+.s1text a {
+    background-color: #E22E6D;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 2px 15px;
+    color: white;
+    font-size: small;
+}
+
+.s1img img{
+    width: 440px;
 }
