@@ -7,10 +7,35 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 5px 120px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 50px;
+    background-color: white;
 }
 
+/* Header all styles */
+header {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.nav i {
+    padding: 0 7px;
+    transition: transform .5s ease;
+}
+
+.nav i:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+/* Section 1 all styles */
 .s1all {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +49,6 @@ body {
 }
 
 .s1text h1 {
-    /* padding: 10px 0; */
     font-size: 30px;
 }
 
@@ -34,13 +58,19 @@ body {
 }
 
 .s1text a {
-    background-color: #E22E6D;
+    background-color: #cf2e66;
     width: fit-content;
     text-decoration: none;
     border-radius: 20px;
-    padding: 2px 15px;
+    padding: 7px 15px;
     color: white;
     font-size: small;
+    transition: transform .5s ease;
+}
+
+.s1text a:hover {
+    background-color: #ff005d;
+    transform: scale(1.15);
 }
 
 .s1img{
@@ -49,4 +79,148 @@ body {
 }
 .s1img img{
     width: 440px;
+}
+
+/* Logo items in the middle all styles */
+.alllogos {
+    margin: 40px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 70px;
+    transition: transform .5s ease;
+}
+
+.logo img:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Section 2 all styles */
+.centered {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.s2all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 5px 5px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    transition: box-shadow .5s ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 30px 5px;
+    cursor: pointer;
+}
+
+.s2text i {
+    color: #f28927;
+    font-size: small;
+}
+
+.s2text p {
+    font-size: small;
+}
+
+.s2img {
+    overflow: hidden;
+}
+
+.s2img img{
+    width: 250px;
+    transition: transform .5s ease;
+}
+
+.s2img img:hover {
+    transform: scale(1.25);
+}
+
+/* Extra Section */
+.extraall {
+    margin: 70px 0;
+    text-align: center;
+}
+
+.extra {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.etext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etext h3{
+    margin: 5px;
+}
+
+.eimg img{
+    width: 350px;
+    transition: transform .5s ease;
+}
+
+.eimg img:hover{
+    transform: scale(1.25);
+}
+
+.movies {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 20px;
+    transition: transform .5s ease;
+}
+
+.movies:hover {
+    transform: scale(1.15);
+}
+
+.movies:hover {
+    background-color: grey;
+}
+
+.movie img {
+    width: 120px;
+    transition: transform .5s ease;
+}
+
+.movie img:hover {
+    transform: scale(1.15);
+}
+
+/* Footer all Design */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #0a0826;
+    color: white;
+    height: 150px;
 }
